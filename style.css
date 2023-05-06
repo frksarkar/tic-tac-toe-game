@@ -21,10 +21,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-.play-board {
-	display: none;
+	transition: all 0.3s ease;
 }
 
 .select-box {
@@ -34,6 +31,12 @@ body {
 	max-width: 350px;
 	width: 100%;
 	/* display: none; */
+}
+
+.select-box.hide {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(-50%, -50%) scale(0.9);
 }
 
 .select-box header {
@@ -82,28 +85,40 @@ body {
 
 /* player board box  */
 
+.play-board {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(-50, -50) scale(0.9);
+}
+
+.play-board.show {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(-50, -50) scale(1);
+}
+
 .play-board .details {
 	background-color: #fff;
 	padding: 8px;
 	border-radius: 5px;
 }
 
-.play-board .details .player {
+.play-board .details .players {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	position: relative;
 }
 
-.play-board .details .player span {
+.play-board .details .players span {
 	width: 100%;
 	padding: 8px 0;
 	font-size: 20px;
 	font-weight: 500;
-	cursor: pointer;
 	text-align: center;
 	border-radius: 5px;
 	z-index: 5;
+	transition: all 0.3s ease;
 }
 
 .details .slider {
@@ -115,10 +130,23 @@ body {
 	background-color: #f35c6e;
 	border-radius: 5px;
 	z-index: 2;
+	transition: all 0.3s ease;
 }
 
-.details .player span:first-child {
+.details .players span:first-child {
 	color: #fff;
+}
+
+.players.active span:first-child {
+	color: #212121;
+}
+
+.players.active span:last-child {
+	color: #fff;
+}
+
+.players.active .slider {
+	left: 50%;
 }
 
 .play-board section {
@@ -135,9 +163,10 @@ body {
 	background-color: var(--blond);
 	border-radius: 5px;
 	margin: 5px;
+	cursor: pointer;
 	text-align: center;
 	line-height: 95px;
-	font-size: 40px;
+	font-size: 60px;
 }
 
 /* result box  */
