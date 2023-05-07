@@ -123,8 +123,7 @@ function selectWinner() {
 		score.style.opacity = '1';
 		score.style.pointerEvents = 'auto';
 		player.innerHTML = tool.playerSign;
-	}
-	if (
+	} else if (
 		getIdName(1) != '' &&
 		getIdName(2) != '' &&
 		getIdName(3) != '' &&
