@@ -177,7 +177,9 @@ body {
 	border-radius: 5px;
 	max-width: 350px;
 	width: 100%;
-	display: none;
+	transition: all 1s ease;
+	pointer-events: none;
+	opacity: 0;
 }
 
 .result-box .won-text {
