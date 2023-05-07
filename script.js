@@ -79,19 +79,3 @@ function bot() {
 	}
 	randomBoxSelected.style.pointerEvents = 'none';
 }
-
-// select winner
-
-function getIdName(idName) {
-	return playBoard.querySelector('.box' + idName);
-}
-
-function checkThreeBox(val1, val2, val3, sign) {
-	if (
-		getIdName(val1) == sign &&
-		getIdName(val2) == sign &&
-		getIdName(val3) == sign
-	) {
-		return true;
-	}
-}
