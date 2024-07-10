@@ -42,6 +42,10 @@ To get a local copy up and running, follow these simple steps:
 
 Open the `index.html` file in your web browser to play the game.
 
+1. Select the game mode (Player vs. Bot or Player vs. Player).
+2. In Player vs. Bot mode, make your move by clicking on the desired cell. The bot will automatically make its move.
+3. In Player vs. Player mode, players take turns clicking on the desired cell to make their moves.
+
 ## Technologies Used
 - HTML
 - CSS
