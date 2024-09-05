@@ -2,17 +2,17 @@
 
 A simple Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.
 
-live demo link: https://frksarkar.github.io/tic-tac-toe-game/
+live demo link: [click here!](https://frksarkar.github.io/tic-tac-toe-game/)
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+-   [Introduction](#introduction)
+-   [Features](#features)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Technologies Used](#technologies-used)
+-   [Contributing](#contributing)
+-   [License](#license)
 
 ## Introduction
 
@@ -20,23 +20,27 @@ This project is a web-based Tic-Tac-Toe game that can be played by two players. 
 
 ## Features
 
-- Two-player game
-- Simple and intuitive user interface
-- Responsive design
-- Win detection
-- Draw detection
+-   Two-player game
+-   Simple and intuitive user interface
+-   Responsive design
+-   Win detection
+-   Draw detection
 
 ## Installation
 
 To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/frksarkar/tic-tac-toe-game.git
+
+    ```sh
+    git clone https://github.com/frksarkar/tic-tac-toe-game.git
+
+    ```
 
 2. Navigate to the project directory:
-   ```sh
-   cd tic-tac-toe-game
+    ```sh
+    cd tic-tac-toe-game
+    ```
 
 ## Usage
 
@@ -47,9 +51,10 @@ Open the `index.html` file in your web browser to play the game.
 3. In Player vs. Player mode, players take turns clicking on the desired cell to make their moves.
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript
+
+-   HTML
+-   CSS
+-   JavaScript
 
 ## Contributing
 
@@ -63,6 +68,7 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (git commit -m 'Add some AmazingFeature')
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
+
 ## License
 
 Distributed under the MIT License. See LICENSE for more information.
