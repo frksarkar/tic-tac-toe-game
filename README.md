@@ -34,7 +34,6 @@ To get a local copy up and running, follow these simple steps:
 
     ```sh
     git clone https://github.com/frksarkar/tic-tac-toe-game.git
-
     ```
 
 2. Navigate to the project directory:
