@@ -5,7 +5,12 @@
 	"main": "script.js",
 	"scripts": {
 		"test": "jest",
-		"husky": "exec < /dev/tty && npx cz --hook || true"
+		"cm": "cz"
+	},
+	"husky": {
+		"hooks": {
+			"prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+		}
 	},
 	"repository": {
 		"type": "git",
@@ -21,6 +26,7 @@
 	"devDependencies": {
 		"@types/jest": "^29.5.14",
 		"@types/jsdom": "^21.1.7",
+		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^9.1.7",
 		"jest": "^29.7.0",
 		"jsdom": "^26.0.0",
@@ -30,5 +36,10 @@
 	"dependencies": {
 		"commitizen": "^4.3.1",
 		"jest-environment-jsdom": "^29.7.0"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
