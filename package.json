@@ -4,8 +4,7 @@
 	"description": "A simple Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript.",
 	"main": "script.js",
 	"scripts": {
-		"test": "jest",
-		"prepare": "husky"
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
