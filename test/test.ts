@@ -47,7 +47,7 @@ describe('Tic-Tac-Toe Tests', () => {
 		box2?.setAttribute('id', 'X');
 		box3?.setAttribute('id', 'X');
 
-		expect(checkThreeBox(1, 2, 3, 'X')).toBe(false); // All boxes have id="X"
+		expect(checkThreeBox(1, 2, 3, 'X')).toBe(true); // All boxes have id="X"
 	});
 
 	test('checkThreeBox should return false when not all boxes match the sign', () => {
