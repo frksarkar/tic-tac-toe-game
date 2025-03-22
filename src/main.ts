@@ -10,6 +10,17 @@ let player: HTMLParagraphElement | null = null;
 let restart: HTMLButtonElement | null = null;
 let winTxt: HTMLDivElement | null = null;
 
+const winnerCombination = [
+	[1, 2, 3],
+	[4, 5, 6],
+	[7, 8, 9],
+	[1, 4, 7],
+	[2, 5, 8],
+	[3, 6, 9],
+	[1, 5, 9],
+	[3, 5, 7],
+];
+
 // Initialize DOM elements
 function initializeDOM() {
 	selectBox = query<HTMLDivElement>('.select-box');
@@ -30,6 +41,7 @@ function initializeDOM() {
 	restart = query<HTMLButtonElement>('button', score);
 	winTxt = query<HTMLDivElement>('.won-text');
 }
+
 // Query utility functions
 function query<T extends HTMLElement>(
 	selector: string,
@@ -44,8 +56,6 @@ function queryAll<T extends HTMLElement>(
 ): NodeListOf<T> | null {
 	return document.querySelectorAll(selector);
 }
-
-// Rest of the code remains unchanged...
 
 interface Tool {
 	playerX: string;
@@ -184,8 +194,6 @@ function bot() {
 	}
 }
 
-// select winner
-
 function getIdName(idName: number) {
 	return playBoard?.querySelector('.box' + idName)?.id;
 }
@@ -207,17 +215,6 @@ function checkThreeBox(
 	}
 	return false;
 }
-
-const winnerCombination = [
-	[1, 2, 3],
-	[4, 5, 6],
-	[7, 8, 9],
-	[1, 4, 7],
-	[2, 5, 8],
-	[3, 6, 9],
-	[1, 5, 9],
-	[3, 5, 7],
-];
 
 function selectWinner() {
 	if (
